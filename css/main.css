@@ -114,4 +114,7 @@ a:hover{
 .social-media a:hover{
   border: none;
   color: var(--primary-color);
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
 }
