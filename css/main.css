@@ -69,6 +69,11 @@ a:hover{
 
 #typed .fa-heart{
   color:#be0c32;
+  animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
 }
 
 .typed-cursor {
