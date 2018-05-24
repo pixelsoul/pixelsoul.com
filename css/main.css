@@ -11,7 +11,6 @@
   --title-font: 'Exo 2', sans-serif;
   --main-font: helvetica;
 
-  /* layout */
 }
 
 body{
@@ -34,14 +33,10 @@ a:hover{
   height: 90vh;
   max-width: 100%;
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   align-items: center;
   justify-content: center;
-}
-
-.logo{
-
 }
 
 .logo h1{
@@ -50,23 +45,50 @@ a:hover{
   font-size: 4rem;
   text-align: center;
   border:solid 0px;
-
   padding: 0px;
   margin: 0 0 15px 0;
 }
 
-.email{
+.typed-text{
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  height: 30px;
+}
+
+#typed{
+  margin: 10px 0 10px 0;
+  width: auto;
   border:solid 0px;
-  padding:0 0 30px 0;
-  display:none;
+  text-align:center;
+  display: inline-grid;
+  font-size: 1.4rem;
+  font-family: monospace;
+}
+
+.typed-cursor {
+    font-size: 1.7rem;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: var(--primary-color);
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .social-media{
   font-size: 1.7rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
 .social-media a{

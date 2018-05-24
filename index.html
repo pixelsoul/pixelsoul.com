@@ -13,6 +13,7 @@
 
   <!-- Vue.js -->
   <script src="https://unpkg.com/vue/dist/vue.js" charset="utf-8"></script>
+  <script src="js/typed/typed.min.js" charset="utf-8"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,21 +21,38 @@
   <div class="container">
 
     <div class="logo">
-      <h1>pixelsoul</h1>
-      <div class="email">
-        <a href="mailto:&#111;&#108;&#105;&#118;&#101;&#114;&#064;&#112;&#105;&#120;&#101;&#108;&#115;&#111;&#117;&#108;&#046;&#099;&#111;&#109;" id="pix-email">
-        &#111;&#108;&#105;&#118;&#101;&#114;&#064;&#112;&#105;&#120;&#101;&#108;&#115;&#111;&#117;&#108;&#046;&#099;&#111;&#109;
-        </a>
+
+      <div class="typed-text">
+        <div id="typed">
+        </div>
       </div>
+
+      <h1>pixelsoul</h1>
+
       <div class="social-media">
         <a href="https://github.com/pixelsoul" title="Github"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/pixelsoul" title="Twitter"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/oliverkelso/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
+
     </div>
 
   </div>
 
+
   <script src="js/main.js" charset="utf-8"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3442562-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
