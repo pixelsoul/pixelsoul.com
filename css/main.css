@@ -64,6 +64,11 @@ a:hover{
   display: inline-grid;
   font-size: 1.4rem;
   font-family: monospace;
+  display:inline;
+}
+
+#typed .fa-heart{
+  color:#be0c32;
 }
 
 .typed-cursor {
