@@ -3,7 +3,8 @@
 :root{
   /* colors */
   --primary-color:#e9de4d;
-  --main-bg-color:#212121;
+  --main-bg-color:#121212;
+  --main-bg-darker: #0B0B0B;
   --main-text-color:#EEEEEE;
 
   /* fonts */
@@ -33,20 +34,52 @@ a:hover{
   height: 90vh;
   max-width: 100%;
   display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
+}
+
+.logo{
+
 }
 
 .logo h1{
   font-family: var(--title-font);
   color: var(--primary-color);
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   border:solid 0px;
 
+  padding: 0px;
+  margin: 0 0 15px 0;
 }
 
 .email{
   text-align: center;
   border:solid 0px;
+  padding:0 0 30px 0;
+  display:none;
+}
+
+.social-media{
+  font-size: 1.7rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a{
+  color:#333333;
+  padding: 5px 2rem;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.social-media a:hover{
+  border: none;
+  color: var(--primary-color);
 }
